@@ -1,7 +1,3 @@
-# UX-Score
-UXScope is an open-source web tool that analyzes any website’s user experience (UX) quality. By entering a URL, it automatically evaluates performance, accessibility, responsiveness, and design consistency to generate a detailed UX score and improvement suggestions.
-
-
 # UXScope - AI-Powered UX Analysis
 
 UXScope is an AI-powered tool that audits any website's user experience. Get instant analysis on performance, accessibility, SEO, and design, with a detailed score and actionable improvement suggestions.
