@@ -94,6 +94,9 @@ Follow these instructions to get a local copy up and running.
 └── types.ts             # TypeScript type definitions
 ```
 
+NOTE
+Currenlty the code is saving it in csv file not in database 
+
 ## 📄 License
 
 This project is licensed under the MIT License.
