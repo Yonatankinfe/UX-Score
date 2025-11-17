@@ -13,17 +13,19 @@ UXScope is an AI-powered tool that audits any website's user experience. Get ins
 - **Actionable Insights**: Receive a clear list of a website's strengths and concrete suggestions for improvement.
 - **Interactive Report**: View results in a beautifully designed, easy-to-understand dashboard with gauges and summary cards.
 - **Leaderboard**: See how your audited site stacks up against other top-rated websites.
+- **Bring Your Own Key**: Securely use your own Google Gemini API key, stored only in your browser.
 - **Responsive Design**: Fully responsive for a seamless experience on any device.
 
 ## 🚀 How It Works
 
 UXScope simplifies the complex process of a UX audit into a single click:
 
-1.  **Input URL**: The user enters the URL of the website they wish to analyze.
-2.  **API Call**: The application sends a detailed prompt, including the target URL and a required JSON schema, to the Google Gemini Pro model (`gemini-2.5-pro`).
-3.  **AI Generation**: Gemini analyzes the website based on its vast knowledge base, simulating a professional audit. It structures its findings into a JSON object that matches the requested schema.
-4.  **Display Report**: The frontend receives the structured data and dynamically renders a comprehensive report, complete with scores, summaries, and lists of strengths and suggestions.
-5.  **Leaderboard Update**: The new analysis is added to the session's leaderboard, which is sorted by the overall score.
+1.  **Enter API Key**: The first time you use the app, you'll be prompted to enter your Google Gemini API key. This is stored securely in your browser's local storage for future sessions.
+2.  **Input URL**: The user enters the URL of the website they wish to analyze.
+3.  **API Call**: The application sends a detailed prompt, including the target URL and a required JSON schema, to the Google Gemini Pro model (`gemini-2.5-pro`) using the provided API key.
+4.  **AI Generation**: Gemini analyzes the website based on its vast knowledge base, simulating a professional audit. It structures its findings into a JSON object that matches the requested schema.
+5.  **Display Report**: The frontend receives the structured data and dynamically renders a comprehensive report, complete with scores, summaries, and lists of strengths and suggestions.
+6.  **Leaderboard Update**: The new analysis is added to the session's leaderboard, which is sorted by the overall score.
 
 ## 🛠️ Tech Stack
 
@@ -39,6 +41,7 @@ Follow these instructions to get a local copy up and running.
 ### Prerequisites
 
 - A modern web browser.
+- A Google Gemini API key.
 - A local web server to serve the `index.html` file. You can use extensions like VS Code's "Live Server".
 
 ### Installation & Setup
@@ -51,16 +54,13 @@ Follow these instructions to get a local copy up and running.
 
 2.  **API Key Configuration:**
 
-    This project requires a Google Gemini API key to function. The application is configured to read the API key from an environment variable named `API_KEY`.
+    UXScope requires a Google Gemini API key to function.
 
-    -   Get your API key from [Google AI Studio](https://makersuite.google.com/app/apikey).
-    -   You must set this key in the environment where you are running the application. The specific method will depend on your operating system and deployment environment. For local development in a bash terminal, you can export the variable:
-        ```bash
-        export API_KEY="YOUR_API_KEY_HERE"
-        ```
-    -   When deploying to a hosting service (like Vercel, Netlify, etc.), add `API_KEY` as an environment variable in the project settings.
+    -   If you don't have one, get your API key from [Google AI Studio](https://makersuite.google.com/app/apikey).
+    -   When you first launch the application, you will be prompted to enter this API key.
+    -   Paste your key into the input field and click "Continue".
 
-    **Note**: The application will not work without this environment variable being correctly set.
+    Your API key is stored exclusively in your browser's local storage. It is not transmitted to any server other than the Google Gemini API for analysis requests.
 
 3.  **Run the application:**
     Since this is a simple static project with ES modules, you don't need a complex build step. Just serve the project's root directory with a local web server.
@@ -77,6 +77,7 @@ Follow these instructions to get a local copy up and running.
 ```
 .
 ├── components/          # React components
+│   ├── APIKeyInputForm.tsx
 │   ├── Leaderboard.tsx
 │   ├── Loader.tsx
 │   ├── ReportCard.tsx
@@ -93,6 +94,7 @@ Follow these instructions to get a local copy up and running.
 ├── README.md            # This file
 └── types.ts             # TypeScript type definitions
 ```
+
 # Image
 
 <img width="1363" height="810" alt="Image" src="https://github.com/user-attachments/assets/fb169f16-c813-4389-8b2c-8da6626ec847" />
