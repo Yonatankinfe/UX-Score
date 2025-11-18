@@ -19,7 +19,43 @@ Coming soon
 - **Bring Your Own Key**: Securely use your own Google Gemini API key, stored only in your browser.
 - **Responsive Design**: Fully responsive for a seamless experience on any device.
 
+## 🛠️ Tech Stack
+
+- React + TypeScript
+- Vite (blazing-fast builds)
+- Tailwind CSS
+- Recharts (charts & gauges)
+- Google Gemini API (`gemini-1.5-pro` or `gemini-1.5-flash`)
+
+## ⚙️ Getting Started (Development)
+
+### Prerequisites
+- Node.js (v18 or higher)
+- A free Google Gemini API key → [Get it here](https://aistudio.google.com/app/apikey)
+
+### Local Development
+## Step one
+```bash
+git clone https://github.com/Yonatankinfe/UX-Score.git
+cd UX-Score
+npm install
+npm run dev
+```
+## Step two
+Open http://localhost:5173 → enter your Gemini API key when prompted.
+
+## Step three
+```
+npm run dev       # Start dev server (hot reload)
+npm run build     # Build for production → creates ./dist folder
+npm run preview   # Preview the production build locally
+npm run deploy    # Deploy to GitHub Pages (after setup)
+```
 ## 🚀 How It Works
+
+
+
+
 
 UXScope simplifies the complex process of a UX audit into a single click:
 
