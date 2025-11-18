@@ -2,6 +2,9 @@
 
 UXScope is an AI-powered tool that audits any website's user experience. Get instant analysis on performance, accessibility, SEO, and design, with a detailed score and actionable improvement suggestions.
 
+## 🚀 Live Demo
+Coming soon
+
 ## ✨ Features
 
 - **Instant AI Analysis**: Leverages the Google Gemini API to provide a comprehensive UX audit in seconds.
