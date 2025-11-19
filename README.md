@@ -134,6 +134,8 @@ Follow these instructions to get a local copy up and running.
 └── types.ts             # TypeScript type definitions
 ```
 
+
+
 # Image
 <img width="1353" height="810" alt="Image" src="https://github.com/user-attachments/assets/0ee1a44c-6121-4110-b385-b3edb2a47032" />
 <img width="1357" height="804" alt="Image" src="https://github.com/user-attachments/assets/ab090a24-39b9-4907-9180-9a1006225d31" />
@@ -145,7 +147,8 @@ Follow these instructions to get a local copy up and running.
 
 ## NOTE
 ```
-Currenlty the code is saving it in csv file not in database 
+Currently, the code is saving the data in a CSV file instead of the database.
+Additionally, API keys are not being stored; they are used only once for security purposes.
 ```
 ## 📄 License
 
