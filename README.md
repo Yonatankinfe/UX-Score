@@ -135,7 +135,11 @@ Follow these instructions to get a local copy up and running.
 ```
 
 # Image
-
+<img width="1360" height="807" alt="Image" src="https://github.com/user-attachments/assets/6cc10b98-767e-481e-aca9-21b86c9c5f58" />
+<img width="1346" height="816" alt="Image" src="https://github.com/user-attachments/assets/93dd5e41-80af-4ef8-bc27-a25e24f4c994" />
+<img width="1358" height="807" alt="Image" src="https://github.com/user-attachments/assets/f16ca250-ba5c-4e01-b43d-dea804edc952" />
+<img width="1353" height="810" alt="Image" src="https://github.com/user-attachments/assets/0ee1a44c-6121-4110-b385-b3edb2a47032" />
+<img width="1357" height="804" alt="Image" src="https://github.com/user-attachments/assets/ab090a24-39b9-4907-9180-9a1006225d31" />
 
 # Video
 
